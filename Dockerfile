@@ -1,6 +1,6 @@
 FROM python:3-alpine
 
-RUN apk add --update git bash curl unzip zip openssl make
+RUN apk add --update git bash curl unzip zip openssl make postgresql
 
 ENV TERRAFORM_VERSION="0.12.9"
 
