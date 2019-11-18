@@ -1,6 +1,15 @@
 # terraform-python
 
-A Docker container that includes Terraform, Python, make, postgresql, psycopg2 and AWSCLI.  Functions identically to the official Terraform container.
+A Docker container that includes:
+- Terraform
+- Python
+- postgresql
+- git
+- bash
+- jq
+- zip
+- psycopg2
+- aws cli
 
 Pre-built containers are available on Dockerhub:
 https://hub.docker.com/r/nataspowers/terraform-python
@@ -22,7 +31,6 @@ $ docker build . -t nataspowers/terraform-python:<tf-version>-<revision>
 
 # Push to Dockerhub
 $ docker push nataspowers/terraform-python:<tf-version>-<revision>
-
-# Update 'latest' tag
-$ docker tag
 ```
+
+Latest build is done automatically on docker-hub, off of master branch

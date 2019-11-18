@@ -6,15 +6,15 @@ RUN apk add --update --no-cache \
       git \
       bash \
       zip \
-      openssl \
+      jq \
       postgresql && \
     apk add --update --no-cache --virtual .build-deps \
       gcc \
       unzip \
       curl \
       python3-dev \
-      make \
       musl-dev \
+      openssl \
       postgresql-dev && \
     pip install --no-cache-dir \
       awscli \
